@@ -1,4 +1,4 @@
-name: Stylelint
+name: Stylelint1
 
 on:
   pull_request:

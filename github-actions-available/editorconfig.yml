@@ -1,4 +1,4 @@
-name: EditorConfig
+name: EditorConfig1
 
 on:
   pull_request:
