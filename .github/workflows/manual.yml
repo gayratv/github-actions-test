@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name "Manual+ENV"
-         env:
-           GAYRAT_TOKEN: ${{ secrets.ENV_GAYRAT_SECRET }}
-        run: |
-          echo "Log level: ${{ github.event.inputs.logLevel }}"
-          echo "Tags: ${{ github.event.inputs.tags }}"
-          echo "Секреты $GAYRAT_TOKEN  ${{GAYRAT_TOKEN}}"
+       env:
+         GAYRAT_TOKEN: ${{ secrets.ENV_GAYRAT_SECRET }}
+       run: |
+        echo "Log level: ${{ github.event.inputs.logLevel }}"
+        echo "Tags: ${{ github.event.inputs.tags }}"
+        echo "Секреты $GAYRAT_TOKEN  ${{GAYRAT_TOKEN}}"
