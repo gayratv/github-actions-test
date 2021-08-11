@@ -12,7 +12,7 @@ jobs:
   printInputs:
     runs-on: ubuntu-latest
     steps:
-     - name "Manual+ENV"
+     - name: "Manual+ENV"
        env:
          GAYRAT_TOKEN: ${{ secrets.ENV_GAYRAT_SECRET }}
        run: |
