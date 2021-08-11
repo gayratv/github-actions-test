@@ -1,9 +1,9 @@
 /* Logo */
 
 .logo {
-    margin: 0;
     width: 50vmin;
     height: 50vmin;
+    margin: 0;
 }
 
 .logo__image {

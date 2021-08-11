@@ -5,6 +5,7 @@
     "test": "editorconfig-checker",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
+    "stylelint": "stylelint \"src/**/*.css\"",
     "build": "npm run html && npm run styles",
     "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/"
   },
@@ -14,6 +15,9 @@
     "html-minifier": "^4.0.0",
     "postcss-cli": "^7.1.1",
     "postcss-csso": "^4.0.0",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0"
   }
 }
